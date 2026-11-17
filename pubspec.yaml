@@ -1,0 +1,29 @@
+name: kirora_flutter
+description: "Kirora client SDK for Flutter: events, visits, consent and push."
+version: 0.1.0
+homepage: https://www.kirora.io
+repository: https://github.com/kiroratech/kirora-flutter
+issue_tracker: https://github.com/kiroratech/kirora-flutter/issues
+publish_to: none
+
+environment:
+  sdk: ^3.13.1
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: io.kirora.flutter
+        pluginClass: KiroraFlutterPlugin
+      ios:
+        pluginClass: KiroraFlutterPlugin
